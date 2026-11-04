@@ -151,14 +151,14 @@ export class GameEngine {
       if (this.isPaused) return;
 
       switch (e.key) {
-        case 'ArrowRight':
-        case 'd':
-        case 'D':
-          this.moveLane(-1);
-          break;
         case 'ArrowLeft':
         case 'a':
         case 'A':
+          this.moveLane(-1);
+          break;
+        case 'ArrowRight':
+        case 'd':
+        case 'D':
           this.moveLane(1);
           break;
         case 'ArrowUp':
