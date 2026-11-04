@@ -182,7 +182,7 @@ export class GameEngine {
   // --- CONTROLS ---
 
   moveLane(direction) {
-    const newLane = this.currentLane + direction;
+    const newLane = this.currentLane - direction;
     if (newLane >= 0 && newLane <= 2) {
       this.currentLane = newLane;
       this.targetX = LANES[this.currentLane];
